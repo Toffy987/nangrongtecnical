@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แผนที่และการเดินทาง | วิทยาลัยเทคนิคนางรอง</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="campus-map.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="หน้าหลักวิทยาลัยเทคนิคนางรอง">
+    <img class="college-logo" src="assets/college-logo.png" alt="ตราวิทยาลัยเทคนิคนางรอง">
+    <span><strong>วิทยาลัยเทคนิคนางรอง</strong><small>NANGRONG TECHNICAL COLLEGE</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  <nav class="nav"><a href="index.html">หน้าแรก</a><a href="about.html">เกี่ยวกับวิทยาลัย</a><a class="active" href="map.html">แผนที่และการเดินทาง</a><a href="contact.html">ติดต่อเรา</a></nav>
+</header>
+<main class="page-main">
+  <section class="page-banner"><p class="eyebrow">MAP & DIRECTIONS</p><h1>แผนที่และการเดินทางในวิทยาลัย</h1><p>เลื่อนเมาส์หรือแตะตำแหน่งบนแผนผังเพื่อดูชื่ออาคาร</p></section>
+  <section class="campus-map-section">
+    <div class="campus-map-heading">
+      <div><p class="eyebrow">CAMPUS MAP</p><h2>แผนผังภายในวิทยาลัย</h2></div>
+      <p class="campus-map-hint">แตะอาคารเพื่อแสดงชื่อ • แตะพื้นที่ว่างเพื่อปิดป้ายชื่อ</p>
+    </div>
+    <div class="campus-map" id="campusMap" aria-label="แผนที่อาคารภายในวิทยาลัยเทคนิคนางรอง">
+      <img src="assets/campus-map.jpg" alt="ภาพถ่ายมุมสูงแผนผังวิทยาลัยเทคนิคนางรอง พร้อมตำแหน่งอาคาร" class="campus-map-image">
+      </div>
+    <p class="campus-map-note">หมายเหตุ: ตำแหน่งป้ายชื่อเป็นจุดเริ่มต้นที่วางอ้างอิงจากภาพต้นฉบับ สามารถปรับค่า --x และ --y ในไฟล์ map.html ให้ตรงกับตำแหน่งอาคารได้</p>
+  </section>
+  <section class="map-layout">
+    <div class="map-panel">
+      <div class="google-map-wrap"><iframe class="google-map-embed" title="แผนที่ Google Maps วิทยาลัยเทคนิคนางรอง" src="https://maps.google.com/maps?q=%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%84%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%AD%E0%B8%87&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <a class="btn btn-gold map-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=วิทยาลัยเทคนิคนางรอง">เปิดค้นหาใน Google Maps ↗</a>
+    </div>
+    <aside class="content-card travel-card"><h2>แนวทางการเดินทาง</h2>
+      <div class="travel-item"><span>01</span><div><h3>รถยนต์หรือรถจักรยานยนต์</h3><p>เปิดแผนที่ออนไลน์และตั้งจุดหมายเป็น “วิทยาลัยเทคนิคนางรอง” ก่อนออกเดินทาง</p></div></div>
+      <div class="travel-item"><span>02</span><div><h3>รถโดยสารสาธารณะ</h3><p>ตรวจสอบเส้นทางและเวลาเดินรถกับผู้ให้บริการในพื้นที่ก่อนเดินทาง</p></div></div>
+      <div class="travel-item"><span>03</span><div><h3>เมื่อถึงวิทยาลัย</h3><p>สอบถามป้อมประชาสัมพันธ์หรือเจ้าหน้าที่เพื่อขอเส้นทางไปยังอาคารที่ต้องการ</p></div></div>
+    </aside>
+  </section>
+</main>
+<footer class="footer"><span class="brand-mark small">นท</span><div><strong>วิทยาลัยเทคนิคนางรอง</strong><small>NANGRONG TECHNICAL COLLEGE</small></div><p>เว็บไซต์แนะนำวิทยาลัย · โปรดตรวจสอบข้อมูลทางการก่อนนำไปใช้งาน</p></footer>
+<script src="script.js"></script><script src="campus-map.js"></script>
+</body></html>
